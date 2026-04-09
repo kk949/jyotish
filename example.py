@@ -7,16 +7,16 @@ jsm.clear_birthdata()
 
 ################ Providing input birth data ####################
 #providing Name and Gender
-inputdata = jsm.input_birthdata(name="Shyam Bhat", gender="male")
+inputdata = jsm.input_birthdata(name="Dhaval Gondaliya", gender="male")
 
 #providing Date of birth details
-inputdata = jsm.input_birthdata(year="1991", month=jsm.October, day="8")
+inputdata = jsm.input_birthdata(year="1992", month=jsm.March, day="27")
 
 #Providing Place of birth details
-inputdata = jsm.input_birthdata(place="Honavar", longitude="+74.4439", lattitude="+14.2798", timezone="+5.5")
+inputdata = jsm.input_birthdata(place="Latipur", longitude="+70.5280", lattitude="+22.6250", timezone="+5.5")
 
 #Providing Time of birth details
-inputdata = jsm.input_birthdata(hour="14", min="47", sec="9")
+inputdata = jsm.input_birthdata(hour="11", min="55", sec="59")
 
 ################### Lets Validate Birthdata ######################
 jsm.validate_birthdata()
@@ -27,7 +27,7 @@ if(jsm.IsBirthdataValid()):
 
 
 ########### Set the output folder and name of file to save generated astrological data
-if("SUCCESS" == jsm.set_output(path="C:\\Users\sbb925582\Downloads", filename="astroOutput")):
+if("SUCCESS" == jsm.set_output(path="d:\\jyotish", filename="astroOutput")):
     print(f'The output is : {jsm.get_output()}')
 else:
     print("Given folder path doesnt exist")

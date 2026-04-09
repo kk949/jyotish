@@ -1,0 +1,130 @@
+2026-04-02 16:55:13,159 - api - INFO - Muhurta request: date=31/03/2026, lat=22.3039, lon=70.8022
+2026-04-02 16:55:13,164 - api_logger - ERROR - HTTP Exception in /panchang/muhurta: 500 - Error calculating Muhurta times: name 'get_abhijit_muhurta' is not defined
+Traceback (most recent call last):
+  File "/var/www/api.astrologyservice.in/api.py", line 291, in get_muhurta_times
+    abhijit = get_abhijit_muhurta(sunrise, sunset)
+              ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_abhijit_muhurta' is not defined
+
+2026-04-02 16:56:02,754 - api - INFO - Muhurta request: date=31/03/2026, lat=22.3039, lon=70.8022
+2026-04-02 16:56:02,763 - api_logger - ERROR - HTTP Exception in /panchang/muhurta: 500 - Error calculating Muhurta times: name 'get_abhijit_muhurta' is not defined
+Traceback (most recent call last):
+  File "/var/www/api.astrologyservice.in/api.py", line 291, in get_muhurta_times
+    abhijit = panchang["advanced_details"]["abhijit_muhurta"]
+              ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_abhijit_muhurta' is not defined
+
+2026-04-02 16:56:16,315 - api - INFO - Muhurta request: date=31/03/2026, lat=22.3039, lon=70.8022
+2026-04-02 16:56:16,317 - api_logger - ERROR - HTTP Exception in /panchang/muhurta: 500 - Error calculating Muhurta times: 'rahukaal'
+Traceback (most recent call last):
+  File "/var/www/api.astrologyservice.in/api.py", line 292, in get_muhurta_times
+    rahu_kaal = panchang["advanced_details"]["rahukaal"]
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'rahukaal'
+
+2026-04-02 16:57:11,949 - api - INFO - Muhurta request: date=31/03/2026, lat=22.3039, lon=70.8022
+2026-04-02 16:57:11,954 - api_logger - INFO - API call /panchang/muhurta successful for user 2
+2026-04-02 16:58:41,896 - api - INFO - Muhurta request: date=31/03/2026, lat=22.3039, lon=70.8022
+2026-04-02 16:58:41,899 - api_logger - INFO - API call /panchang/muhurta successful for user 2
+2026-04-02 17:01:13,176 - api - INFO - Vimshottari Dasha request: dob=31/03/2026, tob=10:00, lat=22.3039, lon=70.8022, tz=5.5
+2026-04-02 17:01:13,278 - api - INFO - Vimshottari Dasha calculated successfully
+2026-04-02 17:01:13,279 - api_logger - INFO - API call /dasha/vimshottari/current successful for user 2
+2026-04-02 17:02:00,955 - api - INFO - Full Vimshottari Dasha request: dob=31/03/2026, tob=10:00, lat=22.3039, lon=70.8022, tz=5.5
+2026-04-02 17:02:01,083 - api - INFO - Full Vimshottari Dasha calculated successfully
+2026-04-02 17:02:01,087 - api_logger - INFO - API call /dasha/vimshottari/full successful for user 2
+2026-04-02 17:02:21,137 - api - INFO - Vimshottari Dasha request: dob=31/03/2026, tob=10:00, lat=22.3039, lon=70.8022, tz=5.5
+2026-04-02 17:02:21,224 - api_logger - INFO - API call /dasha/vimshottari/all successful for user 2
+2026-04-02 17:02:57,584 - api_logger - INFO - API call /dasha/vimshottari/antardasha successful for user 2
+2026-04-02 17:03:18,431 - api_logger - INFO - API call /dasha/vimshottari/paryantardasha successful for user 2
+2026-04-03 08:00:53,236 - api_logger - INFO - API call /dasha/vimshottari/paryantardasha successful for user 2
+2026-04-03 08:01:27,072 - api_logger - ERROR - API ID is required but not provided
+2026-04-03 08:01:43,072 - api_logger - ERROR - HTTP Exception in /dasha/vimshottari/predictions/{planet}: 400 - Invalid planet. Valid planets are: Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu
+2026-04-03 08:01:52,168 - api_logger - INFO - API call /dasha/vimshottari/predictions/{planet} successful for user 2
+2026-04-03 10:37:53,621 - api - INFO - Panchang request: date=31/03/2026, lat=22.3039, lon=70.8022
+2026-04-03 10:37:53,646 - api - INFO - Panchang calculated successfully
+2026-04-03 10:37:53,650 - api_logger - INFO - API call /panchang/daily successful for user 2
+2026-04-03 10:50:55,446 - api - INFO - Muhurta request: date=31/03/2026, lat=22.3039, lon=70.8022
+2026-04-03 10:50:55,451 - api_logger - INFO - API call /panchang/muhurta successful for user 2
+2026-04-03 11:11:16,694 - api - INFO - Vimshottari Dasha request: dob=31/03/2026, tob=10:00, lat=22.3039, lon=70.8022, tz=5.5
+2026-04-03 11:11:16,776 - api - INFO - Vimshottari Dasha calculated successfully
+2026-04-03 11:11:16,778 - api_logger - INFO - API call /dasha/vimshottari/current successful for user 2
+2026-04-03 11:11:46,193 - api - INFO - Full Vimshottari Dasha request: dob=31/03/2026, tob=10:00, lat=22.3039, lon=70.8022, tz=5.5
+2026-04-03 11:11:46,270 - api - INFO - Full Vimshottari Dasha calculated successfully
+2026-04-03 11:11:46,272 - api_logger - INFO - API call /dasha/vimshottari/full successful for user 2
+2026-04-03 11:12:21,005 - api - INFO - Vimshottari Dasha request: dob=31/03/2026, tob=10:00, lat=22.3039, lon=70.8022, tz=5.5
+2026-04-03 11:12:21,081 - api_logger - INFO - API call /dasha/vimshottari/all successful for user 2
+2026-04-03 11:22:43,910 - api_logger - INFO - API call /dasha/vimshottari/antardasha successful for user 2
+2026-04-03 11:23:21,207 - api_logger - INFO - API call /dasha/vimshottari/paryantardasha successful for user 2
+2026-04-03 11:23:40,434 - api_logger - INFO - API call /dasha/vimshottari/predictions/{planet} successful for user 2
+2026-04-03 11:28:03,429 - api_logger - INFO - API call /dasha/vimshottari/specific/{planet} successful for user 2
+2026-04-03 11:31:02,104 - api_logger - ERROR - API ID is required but not provided
+2026-04-03 11:31:16,112 - api_logger - ERROR - API ID is required but not provided
+2026-04-03 11:31:40,744 - api_logger - ERROR - API ID is required but not provided
+2026-04-03 11:33:52,197 - api_logger - ERROR - API ID is required but not provided
+2026-04-03 11:40:30,060 - api_logger - ERROR - HTTP Exception in /dasha/chara/current: 500 - Error calculating current Chara Dasha: 'lagna'
+Traceback (most recent call last):
+  File "/var/www/api.astrologyservice.in/api.py", line 808, in get_current_chara_dasha
+    current_chara = getCharDashaCurrent(division, birth_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/api.astrologyservice.in/support/dashas.py", line 484, in getCharDashaCurrent
+    lagna_sign = division["lagna"]["sign"]
+                 ~~~~~~~~^^^^^^^^^
+KeyError: 'lagna'
+
+2026-04-03 11:50:53,296 - api_logger - ERROR - HTTP Exception in /dasha/chara/current: 500 - Error calculating current Chara Dasha: 'lagna'
+Traceback (most recent call last):
+  File "/var/www/api.astrologyservice.in/api.py", line 808, in get_current_chara_dasha
+    current_chara = getCharDashaCurrent(division, birth_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/api.astrologyservice.in/support/dashas.py", line 484, in getCharDashaCurrent
+    lagna_sign = division["lagna"]["sign"]
+                 ~~~~~~~~^^^^^^^^^
+KeyError: 'lagna'
+
+2026-04-03 11:51:17,742 - api_logger - ERROR - HTTP Exception in /dasha/chara/current: 500 - Error calculating current Chara Dasha: 'lagna'
+Traceback (most recent call last):
+  File "/var/www/api.astrologyservice.in/api.py", line 808, in get_current_chara_dasha
+    current_chara = getCharDashaCurrent(division, birth_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/api.astrologyservice.in/support/dashas.py", line 484, in getCharDashaCurrent
+    lagna_sign = division["lagna"]["sign"]
+                 ~~~~~~~~^^^^^^^^^
+KeyError: 'lagna'
+
+2026-04-03 11:52:56,761 - api_logger - ERROR - HTTP Exception in /dasha/chara/current: 500 - Error calculating current Chara Dasha: 'lagna'
+Traceback (most recent call last):
+  File "/var/www/api.astrologyservice.in/api.py", line 808, in get_current_chara_dasha
+    current_chara = getCharDashaCurrent(division, birth_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/api.astrologyservice.in/support/dashas.py", line 484, in getCharDashaCurrent
+    lagna_sign = division["lagna"]["sign"]
+                 ~~~~~~~~^^^^^^^^^
+KeyError: 'lagna'
+
+2026-04-03 11:53:53,937 - api_logger - INFO - API call /dasha/chara/current successful for user 2
+2026-04-03 12:05:38,732 - api_logger - INFO - API call /dasha/chara/current successful for user 2
+2026-04-03 12:06:18,541 - api_logger - ERROR - HTTP Exception in /dasha/chara/current: 500 - Error calculating current Chara Dasha: 'lagna'
+Traceback (most recent call last):
+  File "/var/www/api.astrologyservice.in/api.py", line 808, in get_current_chara_dasha
+    current_chara = getCharDashaCurrent(division, birth_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/api.astrologyservice.in/support/dashas.py", line 484, in getCharDashaCurrent
+    lagna_sign = division["lagna"]["sign"]
+                 ~~~~~~~~^^^^^^^^^
+KeyError: 'lagna'
+
+2026-04-03 12:09:24,024 - api_logger - ERROR - HTTP Exception in /dasha/chara/current: 500 - Error calculating current Chara Dasha: name 'current_chara' is not defined
+Traceback (most recent call last):
+  File "/var/www/api.astrologyservice.in/api.py", line 813, in get_current_chara_dasha
+    "current_chara_dasha": current_chara,
+                           ^^^^^^^^^^^^^
+NameError: name 'current_chara' is not defined
+
+2026-04-03 12:09:42,042 - api_logger - ERROR - HTTP Exception in /dasha/chara/current: 500 - Error calculating current Chara Dasha: name 'current_chara' is not defined
+Traceback (most recent call last):
+  File "/var/www/api.astrologyservice.in/api.py", line 813, in get_current_chara_dasha
+    "current_chara_dasha": division,
+                           ^^^^^^^^^^
+NameError: name 'current_chara' is not defined
+
+2026-04-03 12:09:52,435 - api_logger - INFO - API call /dasha/chara/current successful for user 2
