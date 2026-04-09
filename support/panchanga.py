@@ -157,7 +157,7 @@ def nakshatra_pada(longitude):
 def sidereal_longitude(jd, planet):
   """Computes nirayana (sidereal) longitude of given planet on jd"""
   set_ayanamsa_mode()
-  longi, flags = swe.calc_ut(jd, planet, flag = swe.FLG_SWIEPH | swe.FLG_SIDEREAL)
+  longi, flags = swe.calc_ut(jd, planet, swe.FLG_SWIEPH | swe.FLG_SIDEREAL)
   reset_ayanamsa_mode()
   return norm360(longi[0]) # degrees
 
