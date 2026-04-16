@@ -128,3 +128,613 @@ Traceback (most recent call last):
 NameError: name 'current_chara' is not defined
 
 2026-04-03 12:09:52,435 - api_logger - INFO - API call /dasha/chara/current successful for user 2
+2026-04-09 12:58:56,016 - httpx - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-09 12:58:56,032 - core.api_logger - ERROR - Pre-call DB error in /panchang/daily: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,032 - httpx - INFO - HTTP Request: GET http://testserver/panchang/daily?date=27%2F03%2F1992&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,048 - core.api_logger - ERROR - Pre-call DB error in /panchang/muhurta: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,048 - httpx - INFO - HTTP Request: GET http://testserver/panchang/muhurta?date=27%2F03%2F1992&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,048 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/daily?sign=aries&lang=en&api_id=smoke-test "HTTP/1.1 422 Unprocessable Entity"
+2026-04-09 12:58:56,048 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/weekly?sign=aries&lang=en&api_id=smoke-test "HTTP/1.1 422 Unprocessable Entity"
+2026-04-09 12:58:56,048 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/monthly?sign=aries&lang=en&api_id=smoke-test "HTTP/1.1 422 Unprocessable Entity"
+2026-04-09 12:58:56,048 - httpx - INFO - HTTP Request: GET http://testserver/prediction/daily-nakshatra?date=27%2F03%2F1992&lang=en&api_id=smoke-test "HTTP/1.1 422 Unprocessable Entity"
+2026-04-09 12:58:56,064 - httpx - INFO - HTTP Request: GET http://testserver/prediction/daily-sun?date=27%2F03%2F1992&lang=en&api_id=smoke-test "HTTP/1.1 422 Unprocessable Entity"
+2026-04-09 12:58:56,064 - core.api_logger - ERROR - Pre-call DB error in /mangal-dosh: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,064 - httpx - INFO - HTTP Request: GET http://testserver/mangal-dosh?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,064 - core.api_logger - ERROR - Pre-call DB error in /pitra-dosh: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,064 - httpx - INFO - HTTP Request: GET http://testserver/pitra-dosh?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,064 - core.api_logger - ERROR - Pre-call DB error in /kaalsarp-dosha: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,064 - httpx - INFO - HTTP Request: GET http://testserver/kaalsarp-dosha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,064 - core.api_logger - ERROR - Pre-call DB error in /papasamaya: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,064 - httpx - INFO - HTTP Request: GET http://testserver/papasamaya?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,079 - core.api_logger - ERROR - Pre-call DB error in /ashtakavarga/: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,079 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,079 - core.api_logger - ERROR - Pre-call DB error in /ashtakavarga/planet/{planet}: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,079 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/planet/Sun?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,079 - core.api_logger - ERROR - Pre-call DB error in /ashtakavarga/sarva: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,079 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/sarva?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,079 - core.api_logger - ERROR - Pre-call DB error in /dasha/vimshottari/current: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,079 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/current?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,095 - core.api_logger - ERROR - Pre-call DB error in /dasha/vimshottari/full: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,095 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/full?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,095 - core.api_logger - ERROR - Pre-call DB error in /dasha/vimshottari/all: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,095 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/all?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,095 - core.api_logger - ERROR - Pre-call DB error in /dasha/vimshottari/antardasha: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,095 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/antardasha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&mahadasha_lord=Sun&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,095 - core.api_logger - ERROR - Pre-call DB error in /dasha/vimshottari/paryantardasha: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,095 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/paryantardasha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&mahadasha_lord=Sun&antardasha_lord=Moon&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,095 - core.api_logger - ERROR - Pre-call DB error in /dasha/vimshottari/predictions/{planet}: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,111 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/predictions/Sun?api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,111 - core.api_logger - ERROR - Pre-call DB error in /dasha/vimshottari/specific/{planet}: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,111 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/specific/Sun?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,111 - core.api_logger - ERROR - Pre-call DB error in /dasha/chara/current: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,111 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/current?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,111 - core.api_logger - ERROR - Pre-call DB error in /dasha/chara/main: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,111 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/main?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,111 - core.api_logger - ERROR - Pre-call DB error in /dasha/chara/sub/{sign}: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,111 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/sub/Aries?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,126 - core.api_logger - ERROR - Pre-call DB error in /dasha/yogini/main: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,126 - httpx - INFO - HTTP Request: GET http://testserver/dasha/yogini/main?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,126 - core.api_logger - ERROR - Pre-call DB error in /dasha/yogini/sub/{lord}: Database connection pool is not initialized
+Traceback (most recent call last):
+  File "d:\jyotish/v3\core\api_logger.py", line 55, in wrapper
+    with get_connection() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "d:\jyotish/v3\core\database.py", line 75, in get_connection
+    raise RuntimeError("Database connection pool is not initialized")
+RuntimeError: Database connection pool is not initialized
+
+2026-04-09 12:58:56,132 - httpx - INFO - HTTP Request: GET http://testserver/dasha/yogini/sub/Moon?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 12:58:56,348 - httpx - INFO - HTTP Request: POST http://testserver/calculate "HTTP/1.1 200 OK"
+2026-04-09 12:58:56,432 - httpx - INFO - HTTP Request: POST http://testserver/generate-chart "HTTP/1.1 200 OK"
+2026-04-09 12:58:56,434 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 12:58:58,042 - httpx - INFO - HTTP Request: POST http://testserver/pdf/kundali "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,832 - httpx - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,832 - core.api_logger - ERROR - Pre-call DB unavailable for /panchang/daily: Database connection pool is not initialized
+2026-04-09 13:00:09,832 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,848 - httpx - INFO - HTTP Request: GET http://testserver/panchang/daily?date=27%2F03%2F1992&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,848 - core.api_logger - ERROR - Pre-call DB unavailable for /panchang/muhurta: Database connection pool is not initialized
+2026-04-09 13:00:09,848 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,848 - httpx - INFO - HTTP Request: GET http://testserver/panchang/muhurta?date=27%2F03%2F1992&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,848 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/daily: Database connection pool is not initialized
+2026-04-09 13:00:09,880 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,880 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/daily?zodiac=1&date=27%2F03%2F1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,896 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/weekly: Database connection pool is not initialized
+2026-04-09 13:00:09,896 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,896 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/weekly?zodiac=1&start_date=27%2F03%2F1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,896 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/monthly: Database connection pool is not initialized
+2026-04-09 13:00:09,896 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,896 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/monthly?zodiac=1&month=3&year=1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,896 - core.api_logger - ERROR - Pre-call DB unavailable for /prediction/daily-nakshatra: Database connection pool is not initialized
+2026-04-09 13:00:09,896 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,896 - httpx - INFO - HTTP Request: GET http://testserver/prediction/daily-nakshatra?nakshatra=1&dob=27%2F03%2F1992&lang=en&api_key=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,908 - core.api_logger - ERROR - Pre-call DB unavailable for /prediction/daily-sun: Database connection pool is not initialized
+2026-04-09 13:00:09,908 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,912 - httpx - INFO - HTTP Request: GET http://testserver/prediction/daily-sun?zodiac=1&date=27%2F03%2F1992&lang=en&api_key=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,912 - core.api_logger - ERROR - Pre-call DB unavailable for /mangal-dosh: Database connection pool is not initialized
+2026-04-09 13:00:09,912 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,912 - httpx - INFO - HTTP Request: GET http://testserver/mangal-dosh?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,912 - core.api_logger - ERROR - Pre-call DB unavailable for /pitra-dosh: Database connection pool is not initialized
+2026-04-09 13:00:09,912 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,912 - httpx - INFO - HTTP Request: GET http://testserver/pitra-dosh?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,912 - core.api_logger - ERROR - Pre-call DB unavailable for /kaalsarp-dosha: Database connection pool is not initialized
+2026-04-09 13:00:09,912 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,912 - httpx - INFO - HTTP Request: GET http://testserver/kaalsarp-dosha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,912 - core.api_logger - ERROR - Pre-call DB unavailable for /papasamaya: Database connection pool is not initialized
+2026-04-09 13:00:09,927 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:09,927 - httpx - INFO - HTTP Request: GET http://testserver/papasamaya?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:09,927 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/: Database connection pool is not initialized
+2026-04-09 13:00:10,112 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,117 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/planet/{planet}: Database connection pool is not initialized
+2026-04-09 13:00:10,168 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/planet/Sun?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,168 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/sarva: Database connection pool is not initialized
+2026-04-09 13:00:10,211 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/sarva?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,211 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/current: Database connection pool is not initialized
+2026-04-09 13:00:10,274 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/current?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,274 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/full: Database connection pool is not initialized
+2026-04-09 13:00:10,322 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/full?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,322 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/all: Database connection pool is not initialized
+2026-04-09 13:00:10,386 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/all?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,386 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/antardasha: Database connection pool is not initialized
+2026-04-09 13:00:10,434 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/antardasha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&mahadasha_lord=Sun&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,434 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/paryantardasha: Database connection pool is not initialized
+2026-04-09 13:00:10,481 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/paryantardasha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&mahadasha_lord=Sun&antardasha_lord=Moon&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,497 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/predictions/{planet}: Database connection pool is not initialized
+2026-04-09 13:00:10,497 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:00:10,497 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/predictions/Sun?api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:00:10,497 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/specific/{planet}: Database connection pool is not initialized
+2026-04-09 13:00:10,544 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/specific/Sun?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,544 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/current: Database connection pool is not initialized
+2026-04-09 13:00:10,607 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/current?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,607 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/main: Database connection pool is not initialized
+2026-04-09 13:00:10,655 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/main?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,655 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/sub/{sign}: Database connection pool is not initialized
+2026-04-09 13:00:10,703 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/sub/Aries?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,719 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/yogini/main: Database connection pool is not initialized
+2026-04-09 13:00:10,766 - httpx - INFO - HTTP Request: GET http://testserver/dasha/yogini/main?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,766 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/yogini/sub/{lord}: Database connection pool is not initialized
+2026-04-09 13:00:10,830 - httpx - INFO - HTTP Request: GET http://testserver/dasha/yogini/sub/Moon?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:00:10,909 - httpx - INFO - HTTP Request: POST http://testserver/calculate "HTTP/1.1 200 OK"
+2026-04-09 13:00:10,988 - httpx - INFO - HTTP Request: POST http://testserver/generate-chart "HTTP/1.1 200 OK"
+2026-04-09 13:00:10,988 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:00:12,401 - httpx - INFO - HTTP Request: POST http://testserver/pdf/kundali "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,290 - httpx - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,290 - core.api_logger - ERROR - Pre-call DB unavailable for /panchang/daily: Database connection pool is not initialized
+2026-04-09 13:01:34,305 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,305 - httpx - INFO - HTTP Request: GET http://testserver/panchang/daily?date=27%2F03%2F1992&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,305 - core.api_logger - ERROR - Pre-call DB unavailable for /panchang/muhurta: Database connection pool is not initialized
+2026-04-09 13:01:34,305 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,305 - httpx - INFO - HTTP Request: GET http://testserver/panchang/muhurta?date=27%2F03%2F1992&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,305 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/daily: Database connection pool is not initialized
+2026-04-09 13:01:34,305 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,305 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/daily?zodiac=1&date=27%2F03%2F1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,305 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/weekly: Database connection pool is not initialized
+2026-04-09 13:01:34,305 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,305 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/weekly?zodiac=1&start_date=27%2F03%2F1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,305 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/monthly: Database connection pool is not initialized
+2026-04-09 13:01:34,321 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,321 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/monthly?zodiac=1&month=3&year=1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,321 - core.api_logger - ERROR - Pre-call DB unavailable for /prediction/daily-nakshatra: Database connection pool is not initialized
+2026-04-09 13:01:34,321 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,321 - httpx - INFO - HTTP Request: GET http://testserver/prediction/daily-nakshatra?nakshatra=1&dob=27%2F03%2F1992&lang=en&api_key=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,321 - core.api_logger - ERROR - Pre-call DB unavailable for /prediction/daily-sun: Database connection pool is not initialized
+2026-04-09 13:01:34,321 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,321 - httpx - INFO - HTTP Request: GET http://testserver/prediction/daily-sun?zodiac=1&date=27%2F03%2F1992&lang=en&api_key=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,321 - core.api_logger - ERROR - Pre-call DB unavailable for /mangal-dosh: Database connection pool is not initialized
+2026-04-09 13:01:34,321 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,321 - httpx - INFO - HTTP Request: GET http://testserver/mangal-dosh?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,337 - core.api_logger - ERROR - Pre-call DB unavailable for /pitra-dosh: Database connection pool is not initialized
+2026-04-09 13:01:34,337 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,341 - httpx - INFO - HTTP Request: GET http://testserver/pitra-dosh?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,343 - core.api_logger - ERROR - Pre-call DB unavailable for /kaalsarp-dosha: Database connection pool is not initialized
+2026-04-09 13:01:34,343 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,345 - httpx - INFO - HTTP Request: GET http://testserver/kaalsarp-dosha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,345 - core.api_logger - ERROR - Pre-call DB unavailable for /papasamaya: Database connection pool is not initialized
+2026-04-09 13:01:34,345 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,345 - httpx - INFO - HTTP Request: GET http://testserver/papasamaya?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,352 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/: Database connection pool is not initialized
+2026-04-09 13:01:34,400 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,400 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,400 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/planet/{planet}: Database connection pool is not initialized
+2026-04-09 13:01:34,447 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,447 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/planet/Sun?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,447 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/sarva: Database connection pool is not initialized
+2026-04-09 13:01:34,495 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,495 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/sarva?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,495 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/current: Database connection pool is not initialized
+2026-04-09 13:01:34,590 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,590 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/current?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,590 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/full: Database connection pool is not initialized
+2026-04-09 13:01:34,668 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,668 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/full?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,668 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/all: Database connection pool is not initialized
+2026-04-09 13:01:34,781 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,781 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/all?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,781 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/antardasha: Database connection pool is not initialized
+2026-04-09 13:01:34,874 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,876 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/antardasha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&mahadasha_lord=Sun&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,878 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/paryantardasha: Database connection pool is not initialized
+2026-04-09 13:01:34,968 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,968 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/paryantardasha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&mahadasha_lord=Sun&antardasha_lord=Moon&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,968 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/predictions/{planet}: Database connection pool is not initialized
+2026-04-09 13:01:34,968 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:34,974 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/predictions/Sun?api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:34,974 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/specific/{planet}: Database connection pool is not initialized
+2026-04-09 13:01:35,047 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:35,047 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/specific/Sun?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:35,063 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/current: Database connection pool is not initialized
+2026-04-09 13:01:35,148 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:35,148 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/current?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:35,148 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/main: Database connection pool is not initialized
+2026-04-09 13:01:35,222 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:35,222 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/main?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:35,237 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/sub/{sign}: Database connection pool is not initialized
+2026-04-09 13:01:35,317 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:35,317 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/sub/Aries?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:35,317 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/yogini/main: Database connection pool is not initialized
+2026-04-09 13:01:35,396 - httpx - INFO - HTTP Request: GET http://testserver/dasha/yogini/main?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 500 Internal Server Error"
+2026-04-09 13:01:35,412 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/yogini/sub/{lord}: Database connection pool is not initialized
+2026-04-09 13:01:35,491 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:01:35,491 - httpx - INFO - HTTP Request: GET http://testserver/dasha/yogini/sub/Moon?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:01:35,570 - httpx - INFO - HTTP Request: POST http://testserver/calculate "HTTP/1.1 200 OK"
+2026-04-09 13:01:35,644 - httpx - INFO - HTTP Request: POST http://testserver/generate-chart "HTTP/1.1 200 OK"
+2026-04-09 13:01:35,649 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:01:37,029 - httpx - INFO - HTTP Request: POST http://testserver/pdf/kundali "HTTP/1.1 200 OK"
+2026-04-09 13:03:01,188 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:03:01,188 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:03:01,204 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:03:01,204 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:03:45,951 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:03:45,951 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:03:45,951 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:03:45,951 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:04:04,294 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:05:04,359 - httpx - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,359 - core.api_logger - ERROR - Pre-call DB unavailable for /panchang/daily: Database connection pool is not initialized
+2026-04-09 13:05:04,359 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,359 - httpx - INFO - HTTP Request: GET http://testserver/panchang/daily?date=27%2F03%2F1992&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,359 - core.api_logger - ERROR - Pre-call DB unavailable for /panchang/muhurta: Database connection pool is not initialized
+2026-04-09 13:05:04,374 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,374 - httpx - INFO - HTTP Request: GET http://testserver/panchang/muhurta?date=27%2F03%2F1992&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,374 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/daily: Database connection pool is not initialized
+2026-04-09 13:05:04,374 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,374 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/daily?zodiac=1&date=27%2F03%2F1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,374 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/weekly: Database connection pool is not initialized
+2026-04-09 13:05:04,374 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,374 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/weekly?zodiac=1&start_date=27%2F03%2F1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,374 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/monthly: Database connection pool is not initialized
+2026-04-09 13:05:04,374 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,374 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/monthly?zodiac=1&month=3&year=1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,388 - core.api_logger - ERROR - Pre-call DB unavailable for /prediction/daily-nakshatra: Database connection pool is not initialized
+2026-04-09 13:05:04,388 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,390 - httpx - INFO - HTTP Request: GET http://testserver/prediction/daily-nakshatra?nakshatra=1&dob=27%2F03%2F1992&lang=en&api_key=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,390 - core.api_logger - ERROR - Pre-call DB unavailable for /prediction/daily-sun: Database connection pool is not initialized
+2026-04-09 13:05:04,390 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,390 - httpx - INFO - HTTP Request: GET http://testserver/prediction/daily-sun?zodiac=1&date=27%2F03%2F1992&lang=en&api_key=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,390 - core.api_logger - ERROR - Pre-call DB unavailable for /mangal-dosh: Database connection pool is not initialized
+2026-04-09 13:05:04,390 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,390 - httpx - INFO - HTTP Request: GET http://testserver/mangal-dosh?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,390 - core.api_logger - ERROR - Pre-call DB unavailable for /pitra-dosh: Database connection pool is not initialized
+2026-04-09 13:05:04,390 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,390 - httpx - INFO - HTTP Request: GET http://testserver/pitra-dosh?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,406 - core.api_logger - ERROR - Pre-call DB unavailable for /kaalsarp-dosha: Database connection pool is not initialized
+2026-04-09 13:05:04,406 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,406 - httpx - INFO - HTTP Request: GET http://testserver/kaalsarp-dosha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,406 - core.api_logger - ERROR - Pre-call DB unavailable for /papasamaya: Database connection pool is not initialized
+2026-04-09 13:05:04,406 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,406 - httpx - INFO - HTTP Request: GET http://testserver/papasamaya?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,406 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/: Database connection pool is not initialized
+2026-04-09 13:05:04,453 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,453 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,453 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/planet/{planet}: Database connection pool is not initialized
+2026-04-09 13:05:04,501 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,501 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/planet/Sun?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,517 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/sarva: Database connection pool is not initialized
+2026-04-09 13:05:04,564 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,564 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/sarva?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,564 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/current: Database connection pool is not initialized
+2026-04-09 13:05:04,644 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,644 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/current?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,644 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/full: Database connection pool is not initialized
+2026-04-09 13:05:04,723 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,723 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/full?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,738 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/all: Database connection pool is not initialized
+2026-04-09 13:05:04,834 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,834 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/all?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,847 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/antardasha: Database connection pool is not initialized
+2026-04-09 13:05:04,929 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:04,929 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/antardasha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&mahadasha_lord=Sun&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:04,929 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/paryantardasha: Database connection pool is not initialized
+2026-04-09 13:05:05,008 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:05,008 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/paryantardasha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&mahadasha_lord=Sun&antardasha_lord=Moon&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:05,008 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/predictions/{planet}: Database connection pool is not initialized
+2026-04-09 13:05:05,008 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:05,008 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/predictions/Sun?api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:05,024 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/specific/{planet}: Database connection pool is not initialized
+2026-04-09 13:05:05,104 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:05,109 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/specific/Sun?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:05,111 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/current: Database connection pool is not initialized
+2026-04-09 13:05:05,183 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:05,183 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/current?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:05,199 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/main: Database connection pool is not initialized
+2026-04-09 13:05:05,278 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:05,278 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/main?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:05,278 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/sub/{sign}: Database connection pool is not initialized
+2026-04-09 13:05:05,357 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:05,357 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/sub/Aries?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:05,371 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/yogini/main: Database connection pool is not initialized
+2026-04-09 13:05:05,453 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:05,453 - httpx - INFO - HTTP Request: GET http://testserver/dasha/yogini/main?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:05,453 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/yogini/sub/{lord}: Database connection pool is not initialized
+2026-04-09 13:05:05,532 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:05:05,532 - httpx - INFO - HTTP Request: GET http://testserver/dasha/yogini/sub/Moon?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:05:05,611 - httpx - INFO - HTTP Request: POST http://testserver/calculate "HTTP/1.1 200 OK"
+2026-04-09 13:05:05,692 - httpx - INFO - HTTP Request: POST http://testserver/generate-chart "HTTP/1.1 200 OK"
+2026-04-09 13:05:05,692 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:05:07,118 - httpx - INFO - HTTP Request: POST http://testserver/pdf/kundali "HTTP/1.1 200 OK"
+2026-04-09 13:05:25,177 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 400 Bad Request"
+2026-04-09 13:07:58,491 - httpx - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,491 - core.api_logger - ERROR - Pre-call DB unavailable for /panchang/daily: Database connection pool is not initialized
+2026-04-09 13:07:58,491 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,491 - httpx - INFO - HTTP Request: GET http://testserver/panchang/daily?date=27%2F03%2F1992&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,491 - core.api_logger - ERROR - Pre-call DB unavailable for /panchang/muhurta: Database connection pool is not initialized
+2026-04-09 13:07:58,507 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,507 - httpx - INFO - HTTP Request: GET http://testserver/panchang/muhurta?date=27%2F03%2F1992&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,507 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/daily: Database connection pool is not initialized
+2026-04-09 13:07:58,507 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,507 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/daily?zodiac=1&date=27%2F03%2F1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,507 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/weekly: Database connection pool is not initialized
+2026-04-09 13:07:58,507 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,507 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/weekly?zodiac=1&start_date=27%2F03%2F1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,507 - core.api_logger - ERROR - Pre-call DB unavailable for /horoscope/monthly: Database connection pool is not initialized
+2026-04-09 13:07:58,507 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,507 - httpx - INFO - HTTP Request: GET http://testserver/horoscope/monthly?zodiac=1&month=3&year=1992&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,507 - core.api_logger - ERROR - Pre-call DB unavailable for /prediction/daily-nakshatra: Database connection pool is not initialized
+2026-04-09 13:07:58,507 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,523 - httpx - INFO - HTTP Request: GET http://testserver/prediction/daily-nakshatra?nakshatra=1&dob=27%2F03%2F1992&lang=en&api_key=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,523 - core.api_logger - ERROR - Pre-call DB unavailable for /prediction/daily-sun: Database connection pool is not initialized
+2026-04-09 13:07:58,523 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,523 - httpx - INFO - HTTP Request: GET http://testserver/prediction/daily-sun?zodiac=1&date=27%2F03%2F1992&lang=en&api_key=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,523 - core.api_logger - ERROR - Pre-call DB unavailable for /mangal-dosh: Database connection pool is not initialized
+2026-04-09 13:07:58,523 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,523 - httpx - INFO - HTTP Request: GET http://testserver/mangal-dosh?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,523 - core.api_logger - ERROR - Pre-call DB unavailable for /pitra-dosh: Database connection pool is not initialized
+2026-04-09 13:07:58,523 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,523 - httpx - INFO - HTTP Request: GET http://testserver/pitra-dosh?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,523 - core.api_logger - ERROR - Pre-call DB unavailable for /kaalsarp-dosha: Database connection pool is not initialized
+2026-04-09 13:07:58,523 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,538 - httpx - INFO - HTTP Request: GET http://testserver/kaalsarp-dosha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,538 - core.api_logger - ERROR - Pre-call DB unavailable for /papasamaya: Database connection pool is not initialized
+2026-04-09 13:07:58,538 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,538 - httpx - INFO - HTTP Request: GET http://testserver/papasamaya?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,538 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/: Database connection pool is not initialized
+2026-04-09 13:07:58,586 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,586 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,586 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/planet/{planet}: Database connection pool is not initialized
+2026-04-09 13:07:58,634 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,634 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/planet/Sun?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,634 - core.api_logger - ERROR - Pre-call DB unavailable for /ashtakavarga/sarva: Database connection pool is not initialized
+2026-04-09 13:07:58,682 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,697 - httpx - INFO - HTTP Request: GET http://testserver/ashtakavarga/sarva?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,697 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/current: Database connection pool is not initialized
+2026-04-09 13:07:58,777 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,777 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/current?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,777 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/full: Database connection pool is not initialized
+2026-04-09 13:07:58,872 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,872 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/full?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,872 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/all: Database connection pool is not initialized
+2026-04-09 13:07:58,981 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:58,982 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/all?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:58,982 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/antardasha: Database connection pool is not initialized
+2026-04-09 13:07:59,062 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:59,062 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/antardasha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&mahadasha_lord=Sun&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,062 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/paryantardasha: Database connection pool is not initialized
+2026-04-09 13:07:59,141 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:59,157 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/paryantardasha?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&mahadasha_lord=Sun&antardasha_lord=Moon&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,157 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/predictions/{planet}: Database connection pool is not initialized
+2026-04-09 13:07:59,157 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:59,157 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/predictions/Sun?api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,157 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/vimshottari/specific/{planet}: Database connection pool is not initialized
+2026-04-09 13:07:59,237 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:59,237 - httpx - INFO - HTTP Request: GET http://testserver/dasha/vimshottari/specific/Sun?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,237 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/current: Database connection pool is not initialized
+2026-04-09 13:07:59,332 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:59,332 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/current?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,332 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/main: Database connection pool is not initialized
+2026-04-09 13:07:59,421 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:59,421 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/main?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,421 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/chara/sub/{sign}: Database connection pool is not initialized
+2026-04-09 13:07:59,510 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:59,510 - httpx - INFO - HTTP Request: GET http://testserver/dasha/chara/sub/Aries?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,510 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/yogini/main: Database connection pool is not initialized
+2026-04-09 13:07:59,597 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:59,597 - httpx - INFO - HTTP Request: GET http://testserver/dasha/yogini/main?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,601 - core.api_logger - ERROR - Pre-call DB unavailable for /dasha/yogini/sub/{lord}: Database connection pool is not initialized
+2026-04-09 13:07:59,680 - core.api_logger - ERROR - get_remaining_calls error: Database connection pool is not initialized
+2026-04-09 13:07:59,680 - httpx - INFO - HTTP Request: GET http://testserver/dasha/yogini/sub/Moon?dob=27%2F03%2F1992&tob=11%3A55&lat=22.3039&lon=70.8022&tz=5.5&lang=en&api_id=smoke-test "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,775 - httpx - INFO - HTTP Request: POST http://testserver/calculate "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,838 - httpx - INFO - HTTP Request: POST http://testserver/generate-chart "HTTP/1.1 200 OK"
+2026-04-09 13:07:59,902 - httpx - INFO - HTTP Request: POST http://testserver/chart/D1 "HTTP/1.1 200 OK"
+2026-04-09 13:08:01,299 - httpx - INFO - HTTP Request: POST http://testserver/pdf/kundali "HTTP/1.1 200 OK"
