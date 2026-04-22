@@ -376,7 +376,7 @@ Other modules needed for this to work is only pyswisseph:
 pip install pyswisseph==2.8.0.post1
 ```
 
-Github repository for this module: https://github.com/VicharaVandana/jyotishyamitra.git 
+Github repository for this module: https://github.com/kk949/jyotish.git 
 
 For jyotishyamitra package : [Click Here](https://pypi.org/project/jyotishyamitra/)
         
